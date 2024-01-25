@@ -16,6 +16,7 @@ const Header = () => {
             width={128}
             height={38}
             alt="Logo"
+            className="ml-4"
           />
         </Link>
 
@@ -25,7 +26,7 @@ const Header = () => {
           </nav>
         </SignedIn>
 
-        <div className="flex w-32 justify-end gap-3">
+        <div className="flex w-32 justify-end gap-3 mr-4">
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
             <MobileNav />
