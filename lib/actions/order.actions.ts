@@ -1,6 +1,5 @@
 "use server";
 
-import Stripe from "stripe";
 import {
   CheckoutOrderParams,
   CreateOrderParams,
@@ -15,6 +14,8 @@ import Event from "../database/models/event.model";
 import { ObjectId } from "mongodb";
 import User from "../database/models/user.model";
 
+{
+  /*
 export const checkoutOrder = async (order: CheckoutOrderParams) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
@@ -48,6 +49,8 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
     throw error;
   }
 };
+ */
+}
 
 export const createOrder = async (order: CreateOrderParams) => {
   try {
